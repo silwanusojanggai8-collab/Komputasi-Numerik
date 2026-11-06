@@ -1,0 +1,18 @@
+ALGORITMA Sistem_Persamaan_Linear_3_Variabel
+(Metode Eliminasi Gauss dengan Partial Pivoting)
+
+INPUT: Matriks A (3x3) dan vektor b (3)
+OUTPUT: Nilai x1, x2, x3
+
+LANGKAH:
+1. Bentuk matriks augmented [A | b].
+2. Lakukan Eliminasi Maju (Forward Elimination):
+   a. Untuk setiap kolom i dari 1 sampai 2:
+   b. Cari baris dengan nilai absolut terbesar di kolom i (Partial Pivoting).
+   c. Tukar baris tersebut dengan baris ke-i.
+   d. Eliminasi elemen di bawah diagonal utama menggunakan operasi baris elementer.
+3. Lakukan Substitusi Balik (Back Substitution):
+   a. Hitung x3 dari baris ke-3.
+   b. Hitung x2 dari baris ke-2 menggunakan nilai x3.
+   c. Hitung x1 dari baris ke-1 menggunakan nilai x2 dan x3.
+4. Tampilkan hasil x1, x2, dan x3.
