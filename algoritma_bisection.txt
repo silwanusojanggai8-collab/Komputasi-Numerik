@@ -1,0 +1,12 @@
+ALGORITMA Metode_Bisection
+INPUT: Fungsi f(x), batas bawah a, batas atas b, toleransi error, max_iterasi
+OUTPUT: Akar persamaan x
+
+LANGKAH:
+1. Periksa apakah f(a) * f(b) < 0. Jika tidak, hentikan (interval tidak valid).
+2. Lakukan perulangan (loop) hingga max_iterasi:
+   a. Hitung titik tengah: c = (a + b) / 2
+   b. Jika f(c) == 0 atau (b - a)/2 < toleransi, maka 'c' adalah akar. Hentikan loop.
+   c. Jika f(a) * f(c) < 0, maka akar ada di interval [a, c]. Set b = c.
+   d. Jika tidak, akar ada di interval [c, b]. Set a = c.
+3. Tampilkan nilai c sebagai hasil akar.
