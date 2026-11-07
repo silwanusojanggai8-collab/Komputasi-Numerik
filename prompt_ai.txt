@@ -1,0 +1,1 @@
+Tolong buatkan kode Python untuk menyelesaikan sistem persamaan linear 3 variabel menggunakan metode eliminasi Gauss beserta penjelasan detail tiap barisnya
